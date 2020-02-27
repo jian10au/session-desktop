@@ -454,6 +454,7 @@
     },
 
     onChooseAttachment(e) {
+      console.log(e, 'from onChooseAttachment');
       if (e) {
         e.stopPropagation();
         e.preventDefault();

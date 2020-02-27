@@ -70,6 +70,7 @@ export class SessionIconButton extends React.PureComponent<SProps> {
   }
 
   private clickHandler(e: any) {
+    console.log(this.props,'here');
     if (this.props.onClick) {
       e.stopPropagation();
       this.props.onClick();

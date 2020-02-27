@@ -6,6 +6,8 @@ import {
   SettingsView,
 } from './session/settings/SessionSettings';
 
+
+
 export const MainViewController = {
   renderMessageView: () => {
     if (document.getElementById('main-view')) {
@@ -24,6 +26,8 @@ export const MainViewController = {
 };
 
 export class MessageView extends React.Component {
+
+  // once loaded, read the storage setting for message
   public render() {
     return (
       <div className="conversation-stack">

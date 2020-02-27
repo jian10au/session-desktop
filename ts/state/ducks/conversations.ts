@@ -201,6 +201,11 @@ function openConversationInternal(
   messageId?: string
 ): NoopActionType {
   trigger('showConversation', id, messageId);
+  console.log('something')
+  let msgList: any = document.querySelector(".message-list")
+  console.log(msgList);
+  msgList.scrollTo(0, msgList.scrollHeight)
+  console.log(msgList);
 
   return {
     type: 'NOOP',

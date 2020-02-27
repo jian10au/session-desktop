@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 
 interface Props {
   /**
@@ -15,19 +15,28 @@ interface Props {
  * apply (with no changes) to messages in the Style Guide.
  */
 export class ConversationContext extends React.Component<Props> {
-  public render() {
-    const { ios, theme, type } = this.props;
 
-    return (
-      <div
-        className={classNames(theme || 'light-theme', ios ? 'ios-theme' : null)}
-      >
-        <div className={classNames('conversation', type || 'private')}>
-          <div className="discussion-container" style={{ padding: '0.5em' }}>
-            <ul className="message-list">{this.props.children}</ul>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  
+
+  // public render() {
+
+  //   console.log('Where ConversationContext')
+
+  //   const { ios, theme, type } = this.props;
+
+  //   return (
+  //     <div
+  //       className={classNames(theme || 'light-theme', ios ? 'ios-theme' : null)}
+  //     >
+  //       <div className={classNames('conversation', type || 'private')}>
+  //         <div className="discussion-container" style={{ padding: '0.5em' }}>
+  //           <ul className="message-list">
+  //             where am I?
+  //             {this.props.children}
+  //             </ul>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 }

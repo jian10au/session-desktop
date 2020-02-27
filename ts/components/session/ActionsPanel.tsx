@@ -190,6 +190,7 @@ export class ActionsPanel extends React.Component<Props, State> {
   }
 
   private readonly handleSectionSelect = (section: SectionType): void => {
+    console.log(this.props, 'handleSectionSelect')
     this.props.onSectionSelected(section);
   };
 }
